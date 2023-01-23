@@ -59,9 +59,76 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div>
-          <button data-modal-close>
-            <img src="./images/x.svg" alt="x" width="11" />
+        <div class="modal-forms">
+          <h3>Залиште свої дані, ми вам передзвонимо</h3>
+          <form class="form" name="signup_form">
+            <div class="form-field">
+              <label class="form-label" for="user-name"
+                ><svg class="form-icon" width="12" height="12">
+                  <use href="./images/form-defs.svg#icon-name"></use>
+                </svg>
+                Ім'я
+              </label>
+              <input
+                class="form-input"
+                id="user-name"
+                type="name"
+                name="name"
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="user-phone"
+                ><svg class="form-icon" width="13" height="13">
+                  <use href="./images/form-defs.svg#icon-tel"></use>
+                </svg>
+                Телефон</label
+              >
+              <input class="form-input" id="user-phone" type="tel" name="tel" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="user-email"
+                ><svg class="form-icon" width="15" height="15">
+                  <use href="./images/form-defs.svg#icon-email"></use>
+                </svg>
+                Пошта</label
+              >
+              <input
+                class="form-input"
+                id="user-email"
+                type="email"
+                name="email"
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="comment"> Коментар</label>
+              <textarea
+                class="form-input"
+                id="comment"
+                name="comment"
+                rows="5"
+                placeholder="Введіть текст"
+              ></textarea>
+            </div>
+            <div class="form-field">
+              <label class="label-check"
+                ><input
+                  class="check-input"
+                  type="checkbox"
+                  name="confirm"
+                  value="confirm"
+                  id="checkbox"
+                /><span class="check_box"></span>Погоджуюся з розсилкою та
+                приймаю <a href="#"> Умови договору</a></label
+              >
+            </div>
+
+            <button class="submit-button" type="submit">Відправити</button>
+          </form>
+
+          <button class="close-button" data-modal-close>
+            <svg width="11" height="11">
+              <use href="./images/form-defs.svg#icon-x-btn"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -389,6 +456,24 @@
               </svg>
             </a>
           </div>
+        </div>
+        <div class="subscribe">
+          <h4>Підпишіться на розсилку</h4>
+          <div class="form-field">
+            <label class="form-label" for="user-email"></label>
+            <input
+              class="form-input"
+              id="user-email"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <button class="submit-button" type="submit">
+            Підписатися<svg class="icon-send" width="24" height="24">
+              <use href="./images/form-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
