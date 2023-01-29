@@ -19,8 +19,8 @@
     <header>
       <div class="container">
         <nav class="main-nav">
-          <a href="index.html" class="logo">
-            <h1>Web<span>Studio</span></h1>
+          <a href="index.html">
+            <h1 class="logo">Web<span>Studio</span></h1>
           </a>
 
           <ul class="site-nav">
@@ -61,11 +61,11 @@
       <!--Radio buttons-->
       <div class="container">
         <ul class="radio">
-          <li class="radio-button"><button type="button">Усі</button></li>
-          <li class="radio-button"><button type="button">Веб-сайти</button></li>
-          <li class="radio-button"><button type="button">Додатки</button></li>
-          <li class="radio-button"><button type="button">Дизайн</button></li>
-          <li class="radio-button"><button type="button">Маркетинг</button></li>
+          <li><button type="button">Усі</button></li>
+          <li><button type="button">Веб-сайти</button></li>
+          <li><button type="button">Додатки</button></li>
+          <li><button type="button">Дизайн</button></li>
+          <li><button type="button">Маркетинг</button></li>
         </ul>
       </div>
 
@@ -73,32 +73,32 @@
       <section>
         <div class="container">
           <ul class="product">
-            <li class="product-card">
+            <li>
               <img src="./images/techkrack.jpg" alt="techkrack" width="370" />
               <h2>Технокряк</h2>
               <p>Веб-сайт</p>
             </li>
-            <li class="product-card">
+            <li>
               <img src="./images/neworlean.jpg" alt="neworlean" width="370" />
               <h2>Постер New Orlean vs Golden Star</h2>
               <p>Дизайн</p>
             </li>
-            <li class="product-card">
+            <li>
               <img src="./images/seafood.jpg" alt="seafood" width="370" />
               <h2>Ресторан Seafood</h2>
               <p>Додаток</p>
             </li>
-            <li class="product-card">
+            <li>
               <img src="./images/prime.jpg" alt="prime" width="370" />
               <h2>Проєкт Prime</h2>
               <p>Маркетинг</p>
             </li>
-            <li class="product-card">
+            <li>
               <img src="./images/boxes.jpg" alt="boxes" width="370" />
               <h2>Проєкт Boxes</h2>
               <p>Додаток</p>
             </li>
-            <li class="product-card">
+            <li>
               <img
                 src="./images/inspiration.jpg"
                 alt="inspiration"
@@ -107,7 +107,7 @@
               <h2>Inspiration has no Borders</h2>
               <p>Веб-сайт</p>
             </li>
-            <li class="product-card">
+            <li>
               <img
                 src="./images/limitededition.jpg"
                 alt="limitededition"
@@ -116,12 +116,12 @@
               <h2>Видання Limited Edition</h2>
               <p>Дизайн</p>
             </li>
-            <li class="product-card">
+            <li>
               <img src="./images/lab.jpg" alt="lab" width="370" />
               <h2>Проєкт LAB</h2>
               <p>Маркетинг</p>
             </li>
-            <li class="product-card">
+            <li>
               <img src="./images/growing.jpg" alt="growing" width="370" />
               <h2>Growing Business</h2>
               <p>Додаток</p>
@@ -134,46 +134,60 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <ul>
-          <li class="logo-footer">
-            <a class="logo footer" href="index.html">Web<span>Studio</span></a>
-          </li>
-          <li>
-            <a class="footer-adr" href="#">м. Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="footer nav">
-            <a class="footer-nav" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="footer nav">
-            <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-        <div class="social">
-          <h4>приєднуйтесь</h4>
-          <div class="social-link">
-            <a href="#" class="button"
-              ><svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#instagram"></use>
-              </svg>
-            </a>
-            <a href="#" class="button"
-              ><svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#twiter"></use>
-              </svg>
-            </a>
-            <a href="#" class="button"
-              ><svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#facebook"></use>
-              </svg>
-            </a>
-            <a href="#" class="button"
-              ><svg width="20" height="20">
-                <use href="./images/symbol-defs.svg#linkedin"></use>
-              </svg>
-            </a>
+        <div>
+          <div class="logo-footer">
+            <a class="logo" href="index.html">Web<span>Studio</span></a>
           </div>
+          <div>
+            <address class="address" href="#">
+              м. Київ, пр-т Лесі Українки, 26
+            </address>
+          </div>
+          <ul class="nav-list">
+            <li>
+              <a class="footer-nav" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="footer-nav" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>приєднуйтесь</h3>
+          <ul class="social-link">
+            <li>
+              <a href="#" class="button"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#twiter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="button"
+                ><svg width="20" height="20">
+                  <use href="./images/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
