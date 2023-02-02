@@ -13,44 +13,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./dist/css/portfolio.min.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <nav class="main-nav">
+        <nav class="nav">
           <a href="index.html">
             <h1 class="logo">Web<span>Studio</span></h1>
           </a>
 
           <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="link">Студія</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link current">Портфоліо</a>
             </li>
-            <li class="item">
-              <a href="#" class="link">Контакти</a>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
             </li>
           </ul>
 
           <ul class="auth-nav">
-            <li class="item">
+            <li class="auth-nav__item">
               <a href="mailto:info@devstudio.com"
-                ><svg class="auth-icon" width="16" height="12">
+                ><svg class="auth-nav__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#mailicon"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com
+              </a>
             </li>
-            <li class="item">
+            <li class="auth-nav__item">
               <a href="tel:+380961111111"
-                ><svg class="auth-icon" width="10" height="16">
+                ><svg class="auth-nav__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#smartphone"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
         </nav>
@@ -73,11 +73,11 @@
       <section>
         <div class="container">
           <ul class="product">
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img src="./images/techkrack.jpg" alt="techkrack" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -86,12 +86,12 @@
               <h2>Технокряк</h2>
               <p>Веб-сайт</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               
               <img src="./images/neworlean.jpg" alt="neworlean" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -100,11 +100,11 @@
               <h2>Постер New Orlean vs Golden Star</h2>
               <p>Дизайн</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img src="./images/seafood.jpg" alt="seafood" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -113,11 +113,11 @@
               <h2>Ресторан Seafood</h2>
               <p>Додаток</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img src="./images/prime.jpg" alt="prime" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -126,11 +126,11 @@
               <h2>Проєкт Prime</h2>
               <p>Маркетинг</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img src="./images/boxes.jpg" alt="boxes" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -139,15 +139,15 @@
               <h2>Проєкт Boxes</h2>
               <p>Додаток</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img
                 src="./images/inspiration.jpg"
                 alt="inspiration"
                 width="369" height="294"
               />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -156,28 +156,28 @@
               <h2>Inspiration has no Borders</h2>
               <p>Веб-сайт</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img
                 src="./images/limitededition.jpg"
                 alt="limitededition"
                 width="369" height="294"
               />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
-                    отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
+                    отримати</br> ичерпні відомості про компанію</br> чи приватну особу.
                   </p>
               </div></div>
               <h2>Видання Limited Edition</h2>
               <p>Дизайн</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img src="./images/lab.jpg" alt="lab" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -186,11 +186,11 @@
               <h2>Проєкт LAB</h2>
               <p>Маркетинг</p>
             </li>
-            <li class="product-card">
-              <div class="product-thumb">
+            <li class="product__card">
+              <div class="product__thumb">
               <img src="./images/growing.jpg" alt="growing" width="369" height="294" />
-              <div class="product-overlay">
-                  <p class="overlay-description">
+              <div class="product__overlay">
+                  <p class="product__overlay-description">
                     Ресурс пропонує комплексні</br> пропозиції з різним рівнем</br>
                     функціоналу та сервісів. Все це</br> дозволить відвідувачу
                     отримати</br> вичерпні відомості про компанію</br> чи приватну особу.
@@ -208,15 +208,15 @@
     <footer class="footer">
       <div class="container">
         <div>
-          <div class="logo-footer">
+          <div class="footer__logo">
             <a class="logo" href="index.html">Web<span>Studio</span></a>
           </div>
           <div>
-            <address class="address" href="#">
-              м. Київ, пр-т Лесі Українки, 26
-            </address>
+            <a class="footer__address" href="#"
+              >м. Київ, пр-т Лесі Українки, 26</a
+            >
           </div>
-          <ul class="nav-list">
+          <ul class="footer__nav">
             <li>
               <a class="footer-nav" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -229,32 +229,32 @@
             </li>
           </ul>
         </div>
-        <div class="social">
+        <div class="footer__social">
           <h3>приєднуйтесь</h3>
-          <ul class="social-link">
+          <ul class="footer__social-link">
             <li>
-              <a href="#" class="button"
+              <a href="#" class="footer__button"
                 ><svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="button"
+              <a href="#" class="footer__button"
                 ><svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#twiter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="button"
+              <a href="#" class="footer__button"
                 ><svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="button"
+              <a href="#" class="footer__button"
                 ><svg width="20" height="20">
                   <use href="./images/symbol-defs.svg#linkedin"></use>
                 </svg>
@@ -262,20 +262,20 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
+        <div class="footer__subscribe">
           <h4>Підпишіться на розсилку</h4>
-          <div class="form-field">
-            <label class="form-label" for="user-email"></label>
+          <div class="footer__form-field">
+            <label class="footer__form-label" for="user-email"></label>
             <input
-              class="form-input"
+              class="footer__form-input"
               id="user-email"
               type="email"
               name="email"
               placeholder="Email"
             />
           </div>
-          <button class="submit-button" type="submit">
-            Підписатися<svg class="icon-send" width="24" height="24">
+          <button class="footer__submit-button" type="submit">
+            Підписатися<svg class="footer__icon-send" width="24" height="24">
               <use href="./images/form-defs.svg#icon-icon-send"></use>
             </svg>
           </button>
