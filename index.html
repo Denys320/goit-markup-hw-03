@@ -22,6 +22,25 @@
           <a href="index.html">
             <h1 class="logo">Web<span>Studio</span></h1>
           </a>
+          <button
+            aria-label="переулючатель мобильного меню"
+            aria-controls="menu-container"
+            type="button"
+            class="phone-button is-open"
+            data-menu-button
+          >
+            <svg class="" width="40" height="40">
+              <use
+                class="icon-menu"
+                href="./images/mobile_btn.svg#icon-menu"
+              ></use>
+              <use
+                class="icon-close"
+                href="./images/mobile_btn.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu></div>
 
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -155,7 +174,7 @@
           <ul class="features__list">
             <li>
               <button class="features__button">
-                <svg>
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#antenna"></use>
                 </svg>
               </button>
@@ -167,7 +186,7 @@
             </li>
             <li>
               <button class="features__button">
-                <svg>
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#clock"></use>
                 </svg>
               </button>
@@ -179,7 +198,7 @@
             </li>
             <li>
               <button class="features__button">
-                <svg>
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#diagram"></use>
                 </svg>
               </button>
@@ -190,7 +209,7 @@
             </li>
             <li>
               <button class="features__button">
-                <svg>
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#astronaut"></use>
                 </svg>
               </button>
@@ -415,61 +434,64 @@
 
     <footer class="footer">
       <div class="container">
-        <div>
-          <div class="footer__logo">
-            <a class="logo" href="index.html">Web<span>Studio</span></a>
-          </div>
+        <div class="footer-main">
           <div>
-            <a class="footer__address" href="#"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
+            <div class="footer__logo">
+              <a class="logo" href="./index.html">Web<span>Studio</span></a>
+            </div>
+            <div>
+              <a class="footer__address" href="#"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </div>
+            <ul class="footer__nav">
+              <li>
+                <a class="footer-nav" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="footer-nav" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
           </div>
-          <ul class="footer__nav">
-            <li>
-              <a class="footer-nav" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="footer-nav" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+          <div class="footer__social">
+            <h3>приєднуйтесь</h3>
+            <ul class="footer__social-link">
+              <li>
+                <a href="#" class="footer__button"
+                  ><svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__button"
+                  ><svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#twiter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__button"
+                  ><svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__button"
+                  ><svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__social">
-          <h3>приєднуйтесь</h3>
-          <ul class="footer__social-link">
-            <li>
-              <a href="#" class="footer__button"
-                ><svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer__button"
-                ><svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#twiter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer__button"
-                ><svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer__button"
-                ><svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer__subscribe">
           <h4>Підпишіться на розсилку</h4>
           <div class="footer__form-field">
@@ -491,5 +513,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
