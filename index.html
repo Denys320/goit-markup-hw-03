@@ -29,143 +29,154 @@
             class="phone-button is-open"
             data-menu-button
           >
-            <svg class="" width="40" height="40">
+            <svg width="40" height="40">
               <use
                 class="icon-menu"
-                href="./images/mobile_btn.svg#icon-menu"
+                href="./images/mobile_btn.svg#icon-close"
               ></use>
               <use
                 class="icon-close"
-                href="./images/mobile_btn.svg#icon-close"
+                href="./images/mobile_btn.svg#icon-menu"
               ></use>
             </svg>
           </button>
-          <div class="menu-container" id="menu-container" data-menu></div>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link current">Студія</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">Контакти</a>
+              </li>
+            </ul>
 
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link current">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">Контакти</a>
-            </li>
-          </ul>
-
-          <ul class="auth-nav">
-            <li class="auth-nav__item">
-              <a href="mailto:info@devstudio.com"
-                ><svg class="auth-nav__icon" width="16" height="12">
-                  <use href="./images/icons.svg#mailicon"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="auth-nav__item">
-              <a href="tel:+380961111111"
-                ><svg class="auth-nav__icon" width="10" height="16">
-                  <use href="./images/icons.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+            <ul class="auth-nav">
+              <li class="auth-nav__item">
+                <a href="mailto:info@devstudio.com"
+                  ><svg class="auth-nav__icon" width="16" height="12">
+                    <use href="./images/icons.svg#mailicon"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="auth-nav__item colored">
+                <a href="tel:+380961111111"
+                  ><svg class="auth-nav__icon" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <!-- For mobile version -->
+            <div class="social-header">
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">Facebook</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="modal-forms">
-          <h3>Залиште свої дані, ми вам передзвонимо</h3>
-          <form class="form" name="signup_form">
-            <div class="form__field">
-              <label class="form__label" for="user-name"
-                ><svg class="form__icon" width="12" height="12">
-                  <use href="./images/form-defs.svg#icon-name"></use>
-                </svg>
-                Ім'я
-              </label>
-              <input
-                class="form__input"
-                id="user-name"
-                type="name"
-                name="name"
-              />
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="user-phone"
-                ><svg class="form__icon" width="13" height="13">
-                  <use href="./images/form-defs.svg#icon-tel"></use>
-                </svg>
-                Телефон</label
-              >
-              <input
-                class="form__input"
-                id="user-phone"
-                type="tel"
-                name="tel"
-              />
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="user-email"
-                ><svg class="form__icon" width="15" height="15">
-                  <use href="./images/form-defs.svg#icon-email"></use>
-                </svg>
-                Пошта</label
-              >
-              <input
-                class="form__input"
-                id="user-email"
-                type="email"
-                name="email"
-              />
-            </div>
-            <div class="form__field">
-              <label class="form__label" for="comment"> Коментар</label>
-              <textarea
-                class="form__input"
-                id="comment"
-                name="comment"
-                rows="5"
-                placeholder="Введіть текст"
-              ></textarea>
-            </div>
-            <div class="form__field">
-              <label class="label-check"
-                ><input
-                  class="check-input"
-                  type="checkbox"
-                  name="confirm"
-                  value="confirm"
-                  id="checkbox"
-                /><span class="check_box"></span>Погоджуюся з розсилкою та
-                приймаю <a href="#"> Умови договору</a></label
-              >
-            </div>
+    <main>
+      <!-- Backdrop/modal -->
 
-            <button class="submit-button" type="submit">Відправити</button>
-          </form>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <div class="modal-forms">
+            <h3>Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="form" name="signup_form">
+              <div class="form__field">
+                <label class="form__label" for="user-name"
+                  ><svg class="form__icon" width="12" height="12">
+                    <use href="./images/form-defs.svg#icon-name"></use>
+                  </svg>
+                  Ім'я
+                </label>
+                <input
+                  class="form__input"
+                  id="user-name"
+                  type="name"
+                  name="name"
+                />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="user-phone"
+                  ><svg class="form__icon" width="13" height="13">
+                    <use href="./images/form-defs.svg#icon-tel"></use>
+                  </svg>
+                  Телефон</label
+                >
+                <input
+                  class="form__input"
+                  id="user-phone"
+                  type="tel"
+                  name="tel"
+                />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="user-email"
+                  ><svg class="form__icon" width="15" height="15">
+                    <use href="./images/form-defs.svg#icon-email"></use>
+                  </svg>
+                  Пошта</label
+                >
+                <input
+                  class="form__input"
+                  id="user-email"
+                  type="email"
+                  name="email"
+                />
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="comment"> Коментар</label>
+                <textarea
+                  class="form__input"
+                  id="comment"
+                  name="comment"
+                  rows="5"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </div>
+              <div class="form__field">
+                <label class="label-check"
+                  ><input
+                    class="check-input"
+                    type="checkbox"
+                    name="confirm"
+                    value="confirm"
+                    id="checkbox"
+                  /><span class="check_box"></span>Погоджуюся з розсилкою та
+                  приймаю <a href="#"> Умови договору</a></label
+                >
+              </div>
 
-          <button class="close-button" data-modal-close>
-            <svg width="11" height="11">
-              <use href="./images/form-defs.svg#icon-x-btn"></use>
-            </svg>
-          </button>
+              <button class="submit-button" type="submit">Відправити</button>
+            </form>
+
+            <button class="close-button" data-modal-close>
+              <svg width="11" height="11">
+                <use href="./images/form-defs.svg#icon-x-btn"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <main>
       <!-- Hero -->
 
       <section class="overlay">
-        <h2 class="overlay__title">Ефективні рішення для вашого бізнесу</h2>
-        <button data-modal-open class="overlay__primary" type="button">
-          Замовити послугу
-        </button>
+        <div class="container">
+          <h2 class="overlay__title">Ефективні рішення для вашого бізнесу</h2>
+          <button data-modal-open class="overlay__primary" type="button">
+            Замовити послугу
+          </button>
+        </div>
       </section>
 
       <!--What we have-->
@@ -230,7 +241,11 @@
           <ul class="work__list">
             <li>
               <img
-                src="./images/typing_on_keyboard.jpg"
+                srcset="
+                  ./images/what_we_do/typing_on_keyboard@1x.jpg 1x,
+                  ./images/what_we_do/typing_on_keyboard@2x.jpg 2x
+                "
+                src="./images/what_we_do/typing_on_keyboard@1x.jpg"
                 alt="typing on keyboard"
                 width="370"
               />
@@ -238,7 +253,11 @@
             </li>
             <li>
               <img
-                src="./images/writing_in_phone.jpg"
+                srcset="
+                  ./images/what_we_do/writing_in_phone@1x.jpg 1x,
+                  ./images/what_we_do/writing_in_phone@2x.jpg 2x
+                "
+                src="./images/what_we_do/writing_in_phone@1x.jpg"
                 alt="writing in phone"
                 width="370"
               />
@@ -246,7 +265,11 @@
             </li>
             <li>
               <img
-                src="./images/watching_on_the_tablet.jpg"
+                srcset="
+                  ./images/what_we_do/watching_on_the_tablet@1x.jpg 1x,
+                  ./images/what_we_do/watching_on_the_tablet@2x.jpg 2x
+                "
+                src="./images/what_we_do/watching_on_the_tablet@1x.jpg"
                 alt="watching to the tablet"
                 width="370"
               />
@@ -262,7 +285,15 @@
           <h2 class="team__caption">Наша команда</h2>
           <ul class="team__list">
             <li>
-              <img src="./images/igor.jpg" alt="igor designer" width="270" />
+              <img
+                srcset="
+                  ./images/team/igor@1x.jpg 1x,
+                  ./images/team/igor@2x.jpg 2x
+                "
+                src="./images/team/igor@1x.jpg"
+                alt="igor designer"
+                width="270"
+              />
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__prof">Product Designer</p>
               <div class="team__social-link">
@@ -289,7 +320,15 @@
               </div>
             </li>
             <li>
-              <img src="./images/olga.jpg" alt="olga developer" width="270" />
+              <img
+                srcset="
+                  ./images/team/olga@1x.jpg 1x,
+                  ./images/team/olga@2x.jpg 2x
+                "
+                src="./images/team/olga@1x.jpg"
+                alt="olga developer"
+                width="270"
+              />
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__prof">Frontend Developer</p>
               <div class="team__social-link">
@@ -317,7 +356,11 @@
             </li>
             <li>
               <img
-                src="./images/mykola.jpg"
+                srcset="
+                  ./images/team/mykola@1x.jpg 1x,
+                  ./images/team/mykola@2x.jpg 2x
+                "
+                src="./images/team/mykola@1x.jpg"
                 alt="mykola marketing"
                 width="270"
               />
@@ -347,7 +390,15 @@
               </div>
             </li>
             <li>
-              <img src="./images/misha.jpg" alt="misha designer" width="270" />
+              <img
+                srcset="
+                  ./images/team/misha@1x.jpg 1x,
+                  ./images/team/misha@2x.jpg 2x
+                "
+                src="./images/team/misha@1x.jpg"
+                alt="misha designer"
+                width="270"
+              />
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__prof">UI Designer</p>
               <div class="team__social-link">
